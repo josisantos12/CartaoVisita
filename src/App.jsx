@@ -1,10 +1,15 @@
 function App() {
+  const handleScroll = () => {
+    const section = document.querySelector('.faleConosco');
+    section?.scrollIntoView({ behavior: 'smooth' });
+  };
+  
   return (
     <div className="container">
 
       <header className="header">
         <img className='logo' src='/logo.png'></img>
-        <button className="contact">Fale Conosco</button>
+        <button  onClick={handleScroll} className="contact">Fale Conosco</button>
       </header>
 
       <section className="bemVindo">
