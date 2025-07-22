@@ -51,13 +51,18 @@ function App() {
 
 <section className="faleConosco">
   <h2>Fale Conosco</h2>
-  <form className="formulario">
-    <input type="text" placeholder="Seu nome" required />
-    <input type="email" placeholder="Seu e-mail" required />
-    <textarea placeholder="Sua mensagem" required></textarea>
+  <form
+    className="formulario"
+    action="https://formsubmit.co/josiane15santos24@gmail.com"
+    method="POST"
+  >
+    <input type="text" name="nome" placeholder="Seu nome" required />
+    <input type="email" name="email" placeholder="Seu e-mail" required />
+    <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
     <button type="submit">Enviar</button>
   </form>
 </section>
+
 
 <footer className="rodape">
   <p>© 2025 HoneyPup Studios. Todos os direitos reservados.</p>
