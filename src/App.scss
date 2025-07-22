@@ -287,9 +287,11 @@ body {
 
 //////////////////////
 @media (max-width: 480px) {
-  .container{
-    width: 100%;
-  }
+body{
+   width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
   .header {
     flex-direction:row;
     align-items:center;
@@ -305,7 +307,7 @@ body {
       font-size: 14px;
     }
   }
-
+ 
   .bemVindo {
     flex-direction: column;
     align-items: center;
@@ -329,9 +331,7 @@ body {
     flex-direction: column;
     align-items: center;
   }
-  .bee{
-    width: 50%;
-  }
+ 
   .faleConosco{
     margin: 4%;
   }
