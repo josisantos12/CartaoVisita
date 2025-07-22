@@ -225,7 +225,7 @@ body {
 // 📱 Responsividade
 // =====================
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .container{
     width: 100%;
   }
@@ -312,7 +312,7 @@ body {
 }
 
 //////////////////////
-@media (min-width: 400px) {
+@media (max-width: 1000px) {
 
   .header {
    
