@@ -5,7 +5,9 @@ body {
   font-family: 'Comic Sans MS', cursive, sans-serif;
   background-color: #bb6809;
   color: #3e2723;
-  width: 100%;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .container {
