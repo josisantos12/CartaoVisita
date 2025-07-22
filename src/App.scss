@@ -1,142 +1,325 @@
-.container {
+// App.scss
+body {
+  margin: 0;
+  padding: 0;
   font-family: 'Comic Sans MS', cursive, sans-serif;
-  background: #fff8e1;
+  background-color: #bb6809;
   color: #3e2723;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  display: inline-flex;
   align-items: center;
-  padding: 1rem 2rem;
-  background: #ffffff;
-  height:max-content;
+  justify-content: space-between;
+  padding: 10px;
+  /* Dá espaço interno sem precisar de margin */
 
   .logo {
-    height: 100%;
-    width:90px;
+    width: 6%;
   }
 
-  .contato {
-    text-decoration: none;
-    color: #3e2723;
+  .contact {
+    background-color: #ffcc00;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
     font-weight: bold;
+    cursor: pointer;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+    /* sombra suave */
   }
 }
 
-.hero {
-  position: relative;
-  background: linear-gradient(to bottom, #ffcc00, #ffa726);
-  padding: 4rem 2rem;
-  text-align: center;
-  background: url(../public/1.png)no-repeat center center;
-  background-size:100%;
-  height: 490px;
-
-
-    .btn {
-      background: #fff;
-      color: #3e2723;
-      padding: 0.75rem 1.5rem;
-      border: none;
-      margin-top: 26rem;
-      margin-left: 20%;
-      border-radius: 20px;
-      font-weight: bold;
-      cursor: pointer;
-       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); // sombra suave
-    
-       &:hover {
-        transform: scale(1.05);
-        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35); // sombra mais intensa ao passar o mouse
-
-  }
-      
-    }
-  }
-
-
-.sobre {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 4rem 9rem;
-  background: #ffe0b2;
-  background: url(../public/2.png)no-repeat center center;
-  background-size:100%;
-  height: 490px;
-
-  .sobre-texto {
-    margin-left: 29rem;
-    text-align: center;
-  }
-}
-
-.formulario {
+///////////////////////////////////////////////
+.bemVindo {
+  width: 100%;
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  padding: 4rem 2rem;
-  background: #f57c00;
-  color: white;
-  background: url(../public/3.png)no-repeat center center;
-  background-size:100%;
-  height: 490px;
-   
 
-  form {
+  .conteudo {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    width: 300px;
- 
-    input, textarea {
-      padding: 0.75rem;
-      border-radius: 10px;
-      border: none;
-      box-shadow: 0 7px 10px rgba(0, 0, 0, 0.25); // sombra suave
-  
+    align-items: center;
+    margin-top: 5%;
+
+    .logobranco {
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .slogan {
+      margin-top: 2%;
+      font-size: 25px;
+      color: #fff;
+    }
+  }
+}
+
+////////////////////////////
+.sobre-nos {
+  color: #333;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+
+  .conteudo {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #603307;
+  }
+
+  .intro {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-bottom: 16px;
+    line-height: 1.6;
+  }
+
+  .valores {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+
+    li {
+      margin-bottom: 10px;
+      background-color: #ffe8d2;
+      padding: 10px 15px;
+      border-radius: 8px;
+    }
+
+    strong {
+      color: #d96d00;
+    }
+  }
+}
+
+////////////////////////////////
+.faleConosco {
+  padding: 40px 20px;
+  text-align: center;
+
+  h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #333;
+  }
+
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      font-family: inherit;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 120px;
     }
 
     button {
-      background: #fff;
-      color: #f57c00;
-      font-weight: bold;
-      padding: 0.75rem;
-      border-radius: 20px;
+      background-color: #ff9800;
+      color: white;
       border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
       cursor: pointer;
-      box-shadow: 0 8px 10px rgba(0, 0, 0, 0.25); // sombra suave
+      font-size: 16px;
+      transition: background-color 0.3s;
 
-
-       &:hover {
-        transform: scale(1.05);
-  }
+      &:hover {
+        background-color: #e68900;
+      }
     }
-     
-}
-
-  .img-form {
-    width: 250px;
-    height: 250px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
   }
 }
 
-.footer {
-  background: #3e2723;
-  color: white;
-  padding: 1rem;
+///////////////
+.rodape {
+  color: #fff;
+  padding: 20px 10px;
   text-align: center;
 
-  .social {
-    margin-top: 0.5rem;
+  p {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  .icones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 
     a {
-      color: white;
-      margin: 0 0.5rem;
+      display: inline-block;
+
+      img {
+        width: 30px;
+        height: 30px;
+        filter: brightness(0) invert(1); // Deixa os ícones brancos
+        transition: transform 0.3s;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
     }
+  }
+}
+
+// =====================
+// 📱 Responsividade
+// =====================
+
+@media (max-width: 768px) {
+  .header {
+    width: 100%;
+    flex-direction:row;
+    justify-content: space-around;
+    
+    .logo {
+      width: 15%; // aumenta o logo pra ficar visível no celular
+    }
+
+    .contact {
+      margin-top: 10px;
+    }
+  }
+
+  .bemVindo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .conteudo {
+      margin-top: 10%;
+      .logobranco {
+        max-width: 200px;
+      }
+
+      .slogan {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .sobre-nos {
+    flex-direction: column;
+    padding: 40px 10px;
+
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    .intro,
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .faleConosco {
+    padding: 30px 10px;
+
+    h2 {
+      font-size: 24px;
+    }
+
+    .formulario {
+      gap: 10px;
+
+      input,
+      textarea {
+        font-size: 14px;
+      }
+
+      button {
+        font-size: 14px;
+        padding: 10px 20px;
+      }
+    }
+  }
+
+  .rodape {
+    font-size: 12px;
+
+    .icones {
+      gap: 10px;
+
+      a img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}
+
+//////////////////////
+@media (max-width: 480px) {
+  .header {
+    flex-direction:row;
+    align-items: flex-start;
+    padding: 10px;
+
+    .logo {
+      width: 15%; // aumenta o logo para ficar visível
+    }
+
+    .contact {
+      margin-top: 10px;
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+
+  .bemVindo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+
+    .conteudo {
+      margin-top: 10%;
+
+      .logobranco {
+        max-width: 180px;
+      }
+
+      .slogan {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .sobre-nos {
+    flex-direction: column;
+  }
+  .faleConosco{
+    margin: 4%;
   }
 }
