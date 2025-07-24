@@ -16,7 +16,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Comic Sans MS', cursive, sans-serif;
-  background-color: #bb6809;
+  background-color: #d1851f;
   color: #3e2723;
   width: 100vw;
   min-height: 100vh;
@@ -71,11 +71,15 @@ body {
   display: flex;
   justify-content: space-around;
 
+
   .conteudo {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 5%;
+    text-shadow: 2px 2px 0 #484343;
+    
+
 
     .logobranco {
       width: 100%;
@@ -117,6 +121,9 @@ body {
   p {
     margin-bottom: 16px;
     line-height: 1.6;
+    font-family: 'Fredoka', sans-serif;
+    font-style: italic;
+
   }
 
   .valores {
@@ -129,10 +136,14 @@ body {
       background-color: #ffe8d2;
       padding: 10px 15px;
       border-radius: 8px;
+      font-family: 'Fredoka', sans-serif;
+      box-shadow: 4px 4px 0px #000000;
+
     }
 
     strong {
       color: #d96d00;
+
     }
   }
 }
@@ -164,6 +175,8 @@ body {
       border-radius: 8px;
       font-size: 16px;
       font-family: inherit;
+       border: 3px solid #000000; // contorno preto
+    box-shadow: 4px 4px 0px #000000; // sombra sólida preta
     }
 
     textarea {
@@ -172,19 +185,22 @@ body {
     }
 
     button {
-      background-color: #ff9800;
-      color: white;
-      border: none;
-      padding: 12px 24px;
-      border-radius: 8px;
-      cursor: pointer;
-      font-size: 16px;
-      transition: background-color 0.3s;
+    padding: 10px 20px;
+    background-color: #f4c55c;
+    color: #000000;
+    font-weight: bold;
+    border: 3px solid #000000;
+    box-shadow: 4px 4px 0px #000000;
+    border-radius: 20px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
 
-      &:hover {
-        background-color: #e68900;
-      }
+    &:hover {
+      transform: translateY(-2px);
     }
+  }
   }
 }
 
