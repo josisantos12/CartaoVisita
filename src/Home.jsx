@@ -1,4 +1,6 @@
 // src/pages/Home.jsx
+import FaleConosco from './FaleConosco';
+
 function Home() {
   const handleScroll = () => {
     const section = document.querySelector('.faleConosco');
@@ -11,13 +13,11 @@ function Home() {
         <img className='logo' src='/logo.png' alt="Logo" />
         <button onClick={handleScroll} className="contact">Fale Conosco</button>
       </header>
-
-      <section className="bemVindo">
+ <section className="bemVindo">
         <div className="dog">
           <img src="/dogsemfundo.png" alt="Dog" />
         </div>
-
-        <div className="conteudo">
+           <div className="conteudo">
           <img className="logobranco" src="logobranco.png" alt="Logo branco" />
           <p className="slogan">O mundo dos jogos começa aqui</p>
         </div>
@@ -40,20 +40,7 @@ Nosso nome é inspirado na lealdade e alegria de um filhote — e é exatamente 
         </div>
       </section>
 
-      <section className="faleConosco">
-        <h2>Fale Conosco</h2>
-        <form
-          className="formulario"
-          action="https://formsubmit.co/josiane15santos24@gmail.com"
-          method="POST"
-        >
-          <input type="hidden" name="_redirect" value="http://localhost:5173/sucesso" />
-          <input type="text" name="nome" placeholder="Seu nome" required />
-          <input type="email" name="email" placeholder="Seu e-mail" required />
-          <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
-          <button type="submit">Enviar</button>
-        </form>
-      </section>
+      <FaleConosco />
 
       <footer className="rodape">
         <p>© 2025 HoneyPup Studios. Todos os direitos reservados.</p>
